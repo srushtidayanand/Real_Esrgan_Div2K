@@ -56,13 +56,5 @@ Both metrics are calculated over 10 validation images from the DIV2K dataset.
 
 ---
 
-## 📦 Requirements
-
-If you want to run it locally instead of Colab:
-
-```b
-pip install torch torchvision opencv-python numpy matplotlib tqdm scikit-image
-
-
 
 ![Screenshot 2025-04-14 011213](https://github.com/user-attachments/assets/e77e65a0-9226-4227-8217-2f9d50ac72e0)
