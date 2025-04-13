@@ -1,103 +1,61 @@
-🔍 Real-ESRGAN on DIV2K: Super-Resolution in PyTorch
-A simple yet powerful implementation of a super-resolution model using the Real-ESRGAN-inspired architecture trained on the DIV2K dataset.
+# 🔍 Real-ESRGAN Super Resolution on DIV2K Dataset
 
-📌 Features
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/<your-username>/<your-repo-name>/blob/main/real_esrgan_div2k.ipynb)
 
-📦 Dataset Handling – Automated downloading and preprocessing of DIV2K dataset
+This project demonstrates a simplified version of the **Real-ESRGAN** model for **image super-resolution** using the **DIV2K dataset**. It includes model training, evaluation, and visualization — all done using PyTorch and runnable in Google Colab.
 
-🧠 Model – Real-ESRGAN inspired model using Residual-in-Residual Dense Blocks (RRDB)
+---
 
-🚀 Training – End-to-end PyTorch training pipeline
+## 📁 Features
 
-📊 Evaluation – PSNR and SSIM metrics for performance
+- 📦 Automatic downloading and extraction of the DIV2K dataset
+- 🔄 Custom PyTorch `Dataset` and `Dataloader`
+- 🧠 A simplified **Real-ESRGAN** model using RRDB blocks
+- 🏋️ Training loop with L1 Loss and Adam optimizer
+- 📊 Evaluation metrics: **PSNR** and **SSIM**
+- 🖼️ Visual comparison of Low-Res, Super-Resolved, and High-Res images
 
-PSNR: 22.75 dB
-SSIM: 0.6859
+---
 
-🖼️ Visualization – Side-by-side comparison of LR, SR, and HR images
+## 🚀 Getting Started
 
-![image](https://github.com/user-attachments/assets/a01b670a-f02e-478c-8ae2-b7efd4132959)
+This project is designed to run on **Google Colab**.
 
+### Step 1: Open in Colab
+Click the badge above or use this link to run it:  
+📎 https://colab.research.google.com/github/srushtidayanand/Real_Esrgan_Div2K/blob/main/real_esrgan_div2k.ipynb
 
-📁 Project Structure
-bash
-Copy
-Edit
-├── real_esrgan_div2k.py     # Main script
-├── README.md
-└── /content/DIV2K/          # Dataset folder (auto-created)
-🔧 Requirements
-Python 3.8+
-PyTorch
-OpenCV
-NumPy
-tqdm
-scikit-image
-Matplotlib
-requests
+### Step 2: Run All Cells
+- The dataset will be downloaded automatically.
+- Training will begin immediately.
+- After training, the model is saved and evaluated.
+- Sample outputs are visualized at the end.
 
-Install dependencies:
+---
 
-bash
-Copy
-Edit
-pip install -r requirements.txt
-🚀 Getting Started
-Clone the Repository:
+## 🧠 Model Architecture
 
-bash
-Copy
-Edit
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/srushtiddayanand/Real_Esrgan_Div2K/blob/main/real_esrgan_div2k.ipynb)
-cd real-esrgan-div2k
-Run the Script:
+This version of Real-ESRGAN includes:
+- Residual Dense Blocks (RDBs)
+- Stacked RRDB blocks
+- PixelShuffle upsampling for x4 scaling
+- Final convolutional output layer
 
-bash
-Copy
-Edit
-python real_esrgan_div2k.py
-This will:
+---
 
-Download the DIV2K dataset
+## 📊 Evaluation Metrics
 
-Train the model
+We use:
+- **PSNR (Peak Signal-to-Noise Ratio)** to measure image fidelity.
+- **SSIM (Structural Similarity Index)** to measure perceptual quality.
 
-Evaluate metrics (PSNR, SSIM)
+Both metrics are calculated over 10 validation images from the DIV2K dataset.
 
-Display sample outputs
+---
 
-🧠 Model Architecture
-5 RRDB blocks (each with 3 Residual Dense Blocks)
+## 📦 Requirements
 
-PixelShuffle upscaling
+If you want to run it locally instead of Colab:
 
-Final output layer maps to 3 RGB channels
-
-📈 Evaluation Metrics
-PSNR (Peak Signal-to-Noise Ratio)
-
-SSIM (Structural Similarity Index Measure)
-
-💾 Model Saving & Loading
-The trained model is saved to:
-/content/real_esrgan_div2k.pth
-
-Reload and evaluate anytime using:
-
-python
-Copy
-Edit
-model.load_state_dict(torch.load("real_esrgan_div2k.pth"))
-🤝 Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you'd like to change.
-
-📜 License
-MIT License
-
-🙌 Acknowledgments
-DIV2K Dataset
-
-Real-ESRGAN Paper
-
-PyTorch
-
+```bash
+pip install torch torchvision opencv-python numpy matplotlib tqdm scikit-image
