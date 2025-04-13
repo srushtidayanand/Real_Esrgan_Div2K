@@ -1,10 +1,16 @@
 🔍 Real-ESRGAN on DIV2K: Super-Resolution in PyTorch
 A simple yet powerful implementation of a super-resolution model using the Real-ESRGAN-inspired architecture trained on the DIV2K dataset.
+
 📌 Features
+
 📦 Dataset Handling – Automated downloading and preprocessing of DIV2K dataset
+
 🧠 Model – Real-ESRGAN inspired model using Residual-in-Residual Dense Blocks (RRDB)
+
 🚀 Training – End-to-end PyTorch training pipeline
+
 📊 Evaluation – PSNR and SSIM metrics for performance
+
 PSNR: 22.75 dB
 SSIM: 0.6859
 
@@ -42,7 +48,7 @@ Clone the Repository:
 bash
 Copy
 Edit
-git clone https://github.com/srushtidayanand/real-esrgan-div2k.git
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/srushtiddayanand/Real_Esrgan_Div2K/blob/main/real_esrgan_div2k.ipynb)
 cd real-esrgan-div2k
 Run the Script:
 
