@@ -49,6 +49,9 @@ We use:
 - **PSNR (Peak Signal-to-Noise Ratio)** to measure image fidelity.
 - **SSIM (Structural Similarity Index)** to measure perceptual quality.
 
+- PSNR: 22.75 dB
+SSIM: 0.6859
+
 Both metrics are calculated over 10 validation images from the DIV2K dataset.
 
 ---
