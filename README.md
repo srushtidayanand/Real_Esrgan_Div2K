@@ -6,18 +6,18 @@ This project demonstrates a simplified version of the **Real-ESRGAN** model for 
 
 ---
 
-## 📁 Features
+##  Features
 
-- 📦 Automatic downloading and extraction of the DIV2K dataset
-- 🔄 Custom PyTorch `Dataset` and `Dataloader`
-- 🧠 A simplified **Real-ESRGAN** model using RRDB blocks
-- 🏋️ Training loop with L1 Loss and Adam optimizer
-- 📊 Evaluation metrics: **PSNR** and **SSIM**
-- 🖼️ Visual comparison of Low-Res, Super-Resolved, and High-Res images
+-  Automatic downloading and extraction of the DIV2K dataset
+-  Custom PyTorch `Dataset` and `Dataloader`
+-  A simplified **Real-ESRGAN** model using RRDB blocks
+-  Training loop with L1 Loss and Adam optimizer
+-  Evaluation metrics: **PSNR** and **SSIM**
+-  Visual comparison of Low-Res, Super-Resolved, and High-Res images
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 This project is designed to run on **Google Colab**.
 
@@ -33,7 +33,7 @@ Click the badge above or use this link to run it:
 
 ---
 
-## 🧠 Model Architecture
+##  Model Architecture
 
 This version of Real-ESRGAN includes:
 - Residual Dense Blocks (RDBs)
@@ -43,7 +43,7 @@ This version of Real-ESRGAN includes:
 
 ---
 
-## 📊 Evaluation Metrics
+##  Evaluation Metrics
 
 We use:
 - **PSNR (Peak Signal-to-Noise Ratio)** to measure image fidelity.
